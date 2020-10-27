@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+}
+
+.grid-container {
+  
+  display: grid;
+ grid-template-rows: 150px 2fr 100px;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  background-color: #aaa5a5;
+}
+
+main {
+  padding: 1rem;
+  background-color: #757272;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #a39e9e;
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+}
+
+.btn {
+  text-align: right;
+}
+
+.sidebar {
+  height: 500px;
+  width: 150px;
+  background-color: skyblue;
+  font-size: 40px;
+  text-align: center;
+  list-style: none;
+}
+
+.grid {
+  
+  display: grid;
+   grid-template-columns: 200px 1fr;
+}
+
+.contact {
+  width: 250px;
+  height: 70px;
+  background-color: steelblue;
+}
+
+.help {
+  width: 250px;
+  height: 70px;
+  background-color: royalblue;
+  margin-left: 200px;
+}
+
+main {
+  display: grid;
+   grid-template-columns: 300px;
+}
+.photo{
+  width: 100%;
+}
+
+
+
+.content {
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+/* mobile rules */
+
+@media only screen and (min-width: 600px){
+  footer h1{
+    background-color: cadetblue;
+  }
+
+}
+/* tablet rules */
+@media only screen and (min-width: 768px) {
+  .photo{
+    float: left;
+    width: 50%;
+    margin-right: 1rem;
+  }
+  
+}
+
+/* desktop rules */
+@media only screen and (min-width: 940px) {
+  body{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+  
+}
+/*# sourceMappingURL=style.css.map */
